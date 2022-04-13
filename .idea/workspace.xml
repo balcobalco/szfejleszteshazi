@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,11 +37,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649849432647</updated>
-      <workItem from="1649849435227" duration="285000" />
+      <workItem from="1649849435227" duration="598000" />
     </task>
+    <task id="LOCAL-00001" summary="pomupdate">
+      <created>1649849866309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649849866309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pomupdate" />
+    <option name="LAST_COMMIT_MESSAGE" value="pomupdate" />
   </component>
 </project>
