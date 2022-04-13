@@ -1,5 +1,3 @@
-import model.DiceApplication;
-
 import java.io.IOException;
 
 public class Main {
