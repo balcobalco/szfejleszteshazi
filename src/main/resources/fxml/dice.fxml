@@ -11,7 +11,7 @@
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
          <children>
             <Button fx:id="dobjGomb" layoutX="465.0" layoutY="295.0" mnemonicParsing="false" onAction="#DiceRoll" text="Dobj!" />
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="117.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="valami" fitHeight="150.0" fitWidth="200.0" layoutX="117.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@1.png" />
                </image>
