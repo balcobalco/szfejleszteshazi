@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="logic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dice.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,8 @@
       <updated>1649849432647</updated>
       <workItem from="1649849435227" duration="3244000" />
       <workItem from="1649912975254" duration="4466000" />
-      <workItem from="1649918537322" duration="774000" />
+      <workItem from="1649918537322" duration="893000" />
+      <workItem from="1649925643074" duration="4271000" />
     </task>
     <task id="LOCAL-00001" summary="pomupdate">
       <created>1649849866309</created>
@@ -155,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649916690641</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="logic">
+      <created>1649919400126</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649919400126</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
