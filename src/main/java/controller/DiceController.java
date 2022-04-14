@@ -8,6 +8,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import model.Dice;
 
+import java.io.IOException;
+
 public class DiceController {
 
 
@@ -21,7 +23,7 @@ public class DiceController {
     @FXML
     private ImageView valami;
 
-    public void DiceRoll(ActionEvent actionEvent) {
+    public void DiceRoll(ActionEvent actionEvent) throws IOException {
         Button button = (Button) actionEvent.getSource();
         Dice dice = new Dice();
 

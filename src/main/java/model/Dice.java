@@ -12,32 +12,29 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class Dice {
 
-    public Integer DiceRoll() {
+    public Integer DiceRoll() throws IOException {
         Random rand = new Random();
         Integer szam = rand.nextInt(6)+1;
 
         var mentettdobas = new MentettDobás();
 
+        System.out.println(mentettdobas.getAtlag());
 
         var objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
         FileReader reader = null;
-        try {
-            reader = new FileReader("tarolt.json");
-        } catch (FileNotFoundException e) {
-            mentettdobas.setAtlag(0);
-            mentettdobas.setDobasokszama(0);
-            mentettdobas.setDobas(0);
 
-        }
+        objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
+        System.out.println(mentettdobas.getDobasokszama());
+
+
+        reader = new FileReader("tarolt.json");
+
 //        objectMapper.readValue(reader, mentettdobas);
+        mentettdobas.setDobasokszama(mentettdobas.getDobasokszama()+1);
+        System.out.println("Dobások száma: "+mentettdobas.getDobasokszama());
 
-
-
-        try (var writer = new FileWriter("tarolt.json")) {
+        var writer = new FileWriter("tarolt.json");
           objectMapper.writeValue(writer, mentettdobas);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
 
         return szam;
         }
