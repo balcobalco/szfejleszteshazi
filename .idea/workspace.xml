@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarolt.json" beforeDir="false" afterPath="$PROJECT_DIR$/tarolt.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +116,7 @@
       <workItem from="1649925643074" duration="7893000" />
       <workItem from="1650565600471" duration="777000" />
       <workItem from="1650566401874" duration="605000" />
-      <workItem from="1650654287760" duration="2703000" />
+      <workItem from="1650654287760" duration="4494000" />
     </task>
     <task id="LOCAL-00001" summary="pomupdate">
       <created>1649849866309</created>
@@ -211,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649937279275</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="logic">
+      <created>1650657024380</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1650657024380</updated>
+    </task>
+    <task id="LOCAL-00015" summary="logic">
+      <created>1650657172100</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1650657172100</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

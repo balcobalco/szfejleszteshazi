@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class Dice {
 
-    public Integer DiceRoll() throws IOException {
+    public MentettDobás DiceRoll() throws IOException {
         Random rand = new Random();
         Integer szam = rand.nextInt(6)+1;
 
@@ -29,13 +29,13 @@ public class Dice {
             objectMapper.writeValue(writer, mentettDobás);
         }
 
+        mentettDobás.setAktualis(szam);
 
 
 
 
 
-
-        return szam;
+        return mentettDobás;
         }
 
 }

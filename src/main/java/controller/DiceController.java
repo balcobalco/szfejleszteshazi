@@ -1,4 +1,6 @@
 package controller;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,11 +9,17 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import model.Dice;
+import model.MentettDobás;
 
+import java.io.FileReader;
 import java.io.IOException;
 
 public class DiceController {
 
+    @FXML
+    private Label eddigidobasok;
+    @FXML
+    private Label eddigiatlag;
 
     Image pic1 = new Image("file:src/main/resources/fxml/1.png");
     Image pic2 = new Image("file:src/main/resources/fxml/2.png");
@@ -27,8 +35,7 @@ public class DiceController {
         Button button = (Button) actionEvent.getSource();
         Dice dice = new Dice();
 
-        int value = dice.DiceRoll();
-        //System.out.println(value);
+        int value = dice.DiceRoll().getAktualis();
         if(value == 1)
             valami.setImage(pic1);
         if(value == 2)
@@ -41,6 +48,13 @@ public class DiceController {
             valami.setImage(pic5);
         if(value == 6)
             valami.setImage(pic6);
+
+        var objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+        MentettDobás mentettDobás = new MentettDobás();
+        mentettDobás = objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
+
+        eddigiatlag.setText(String.valueOf(mentettDobás.getAtlag()));
+        eddigidobasok.setText(String.valueOf(mentettDobás.getDobasokszama()));
 
     }
 }
