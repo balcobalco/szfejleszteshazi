@@ -13,12 +13,6 @@ public class Main {
         var objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
         System.out.println(objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class));
 
-        MentettDobás mentettDobás = new MentettDobás();
-        mentettDobás = objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
-        System.out.println(mentettDobás.getAtlag());
-        double atlag = mentettDobás.getAtlag();
-        Integer dobasokszama = mentettDobás.getDobasokszama();
-
         Application.launch(DiceApplication.class, args);
     }
 }
