@@ -32,8 +32,11 @@ public class DiceController {
     private ImageView valami;
 
     public void DiceRoll(ActionEvent actionEvent) throws IOException {
+
         Button button = (Button) actionEvent.getSource();
         Dice dice = new Dice();
+
+
 
         int value = dice.DiceRoll().getAktualis();
         if(value == 1)
@@ -52,6 +55,7 @@ public class DiceController {
         var objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
         MentettDobás mentettDobás = new MentettDobás();
         mentettDobás = objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
+
 
         eddigiatlag.setText(String.valueOf(mentettDobás.getAtlag()));
         eddigidobasok.setText(String.valueOf(mentettDobás.getDobasokszama()));

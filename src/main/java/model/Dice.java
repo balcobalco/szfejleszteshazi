@@ -31,10 +31,6 @@ public class Dice {
 
         mentettDobás.setAktualis(szam);
 
-
-
-
-
         return mentettDobás;
         }
 

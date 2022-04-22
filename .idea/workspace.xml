@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="logic">
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/DiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarolt.json" beforeDir="false" afterPath="$PROJECT_DIR$/tarolt.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,35 +39,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\tempzh\szfejleszteshazi\src\main\resources\fxml" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="model" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="DiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DiceApplication" />
-      <module name="szfejleszteshazi" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="szfejleszteshazi" />
@@ -74,10 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="model.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="model.Main" />
+    <configuration name="DiceTest.testatlagnemnegativ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="szfejleszteshazi" />
       <extension name="coverage">
         <pattern>
@@ -85,20 +84,76 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DiceTest" />
+      <option name="METHOD_NAME" value="testatlagnemnegativ" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiceTest.testdobasokszamanemnegativ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szfejleszteshazi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DiceTest" />
+      <option name="METHOD_NAME" value="testdobasokszamanemnegativ" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiceTest.testkisebbmint6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szfejleszteshazi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DiceTest" />
+      <option name="METHOD_NAME" value="testkisebbmint6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiceTest.testnagyobbmint1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="szfejleszteshazi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.DiceTest" />
+      <option name="METHOD_NAME" value="testnagyobbmint1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DiceApplication" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.model.Main" />
+      <item itemvalue="JUnit.DiceTest.testatlagnemnegativ" />
+      <item itemvalue="JUnit.DiceTest.testdobasokszamanemnegativ" />
+      <item itemvalue="JUnit.DiceTest.testkisebbmint6" />
+      <item itemvalue="JUnit.DiceTest.testnagyobbmint1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.model.Main" />
-        <item itemvalue="Application.DiceApplication" />
+        <item itemvalue="JUnit.DiceTest.testdobasokszamanemnegativ" />
+        <item itemvalue="JUnit.DiceTest.testatlagnemnegativ" />
+        <item itemvalue="JUnit.DiceTest.testkisebbmint6" />
+        <item itemvalue="JUnit.DiceTest.testnagyobbmint1" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +171,8 @@
       <workItem from="1649925643074" duration="7893000" />
       <workItem from="1650565600471" duration="777000" />
       <workItem from="1650566401874" duration="605000" />
-      <workItem from="1650654287760" duration="4494000" />
+      <workItem from="1650654287760" duration="4848000" />
+      <workItem from="1650662136051" duration="3325000" />
     </task>
     <task id="LOCAL-00001" summary="pomupdate">
       <created>1649849866309</created>
@@ -223,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650657172100</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="logic">
+      <created>1650659102061</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1650659102061</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
