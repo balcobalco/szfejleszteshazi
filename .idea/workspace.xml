@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="logic" />
+    <list default="true" id="58b77427-dd27-4ff8-926a-b49f98528ff9" name="Changes" comment="logic">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MentettDobás.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarolt.json" beforeDir="false" afterPath="$PROJECT_DIR$/tarolt.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,9 +76,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="model.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="model.Main" />
+      <module name="szfejleszteshazi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DiceApplication" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.model.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.model.Main" />
         <item itemvalue="Application.DiceApplication" />
       </list>
     </recent_temporary>
@@ -85,7 +115,10 @@
       <workItem from="1649849435227" duration="3244000" />
       <workItem from="1649912975254" duration="4466000" />
       <workItem from="1649918537322" duration="893000" />
-      <workItem from="1649925643074" duration="7795000" />
+      <workItem from="1649925643074" duration="7893000" />
+      <workItem from="1650565600471" duration="777000" />
+      <workItem from="1650566401874" duration="605000" />
+      <workItem from="1650654287760" duration="2703000" />
     </task>
     <task id="LOCAL-00001" summary="pomupdate">
       <created>1649849866309</created>
@@ -171,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649937169411</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="logic">
+      <created>1649937279275</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649937279275</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

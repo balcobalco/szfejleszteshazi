@@ -28,7 +28,7 @@ public class DiceController {
         Dice dice = new Dice();
 
         int value = dice.DiceRoll();
-        System.out.println(value);
+        //System.out.println(value);
         if(value == 1)
             valami.setImage(pic1);
         if(value == 2)

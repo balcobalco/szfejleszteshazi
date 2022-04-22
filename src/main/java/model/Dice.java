@@ -16,25 +16,24 @@ public class Dice {
         Random rand = new Random();
         Integer szam = rand.nextInt(6)+1;
 
-        var mentettdobas = new MentettDobás();
-
-        System.out.println(mentettdobas.getAtlag());
-
         var objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
-        FileReader reader = null;
+        MentettDobás mentettDobás = new MentettDobás();
+        mentettDobás = objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
 
-        objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
-        System.out.println(mentettdobas.getDobasokszama());
+        mentettDobás.setAtlag(((mentettDobás.getAtlag()* mentettDobás.getDobasokszama()) + szam) / (mentettDobás.getDobasokszama()+1) );
+        mentettDobás.setDobasokszama(mentettDobás.getDobasokszama()+1);
 
 
-        reader = new FileReader("tarolt.json");
+        System.out.println(objectMapper.writeValueAsString(mentettDobás));
+        try (var writer = new FileWriter("tarolt.json")) {
+            objectMapper.writeValue(writer, mentettDobás);
+        }
 
-//        objectMapper.readValue(reader, mentettdobas);
-        mentettdobas.setDobasokszama(mentettdobas.getDobasokszama()+1);
-        System.out.println("Dobások száma: "+mentettdobas.getDobasokszama());
 
-        var writer = new FileWriter("tarolt.json");
-          objectMapper.writeValue(writer, mentettdobas);
+
+
+
+
 
         return szam;
         }
