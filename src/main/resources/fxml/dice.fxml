@@ -6,7 +6,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
 
 <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="kocka" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DiceController">
   <content>
@@ -18,10 +17,8 @@
                   <Image url="@1.png" />
                </image>
             </ImageView>
-            <Text layoutX="341.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eddigi dobások száma:" wrappingWidth="172.00131225585938" />
-            <Text layoutX="341.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eddigi dobások átlaga:" wrappingWidth="172.00131225585938" />
-            <Label fx:id="eddigidobasok" layoutX="474.0" layoutY="49.0" prefHeight="17.0" prefWidth="70.0" text="Label" />
-            <Label fx:id="eddigiatlag" layoutX="474.0" layoutY="134.0" prefHeight="17.0" prefWidth="84.0" text="Label" />
+            <Label fx:id="eddigidobasok" layoutX="306.0" layoutY="49.0" prefHeight="18.0" prefWidth="239.0" text="Label" />
+            <Label fx:id="eddigiatlag" layoutX="307.0" layoutY="134.0" prefHeight="18.0" prefWidth="251.0" text="Label" />
          </children></AnchorPane>
   </content>
 </TitledPane>

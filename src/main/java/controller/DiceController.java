@@ -57,8 +57,8 @@ public class DiceController {
         mentettDobás = objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
 
 
-        eddigiatlag.setText(String.valueOf(mentettDobás.getAtlag()));
-        eddigidobasok.setText(String.valueOf(mentettDobás.getDobasokszama()));
+        eddigiatlag.setText("Eddigi dobások átlaga: "+String.valueOf(mentettDobás.getAtlag()));
+        eddigidobasok.setText("Eddigi dobások száma: "+String.valueOf(mentettDobás.getDobasokszama()));
 
     }
 }
