@@ -12,5 +12,6 @@ public class DiceApplication extends Application  {
         stage.setResizable(false);
         stage.setScene(new Scene(root));
         stage.show();
+
     }
 }

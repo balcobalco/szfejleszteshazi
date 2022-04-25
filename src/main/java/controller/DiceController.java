@@ -3,6 +3,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -13,8 +14,10 @@ import model.MentettDobás;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class DiceController {
+public class DiceController implements Initializable {
 
     @FXML
     private Label eddigidobasok;
@@ -30,6 +33,25 @@ public class DiceController {
 
     @FXML
     private ImageView valami;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources)  {
+
+        var objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+        MentettDobás mentettDobás = new MentettDobás();
+        try {
+            mentettDobás = objectMapper.readValue(new FileReader("tarolt.json"), MentettDobás.class);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        eddigiatlag.setText("Eddigi dobások átlaga: "+String.valueOf(mentettDobás.getAtlag()));
+        eddigidobasok.setText("Eddigi dobások száma: "+String.valueOf(mentettDobás.getDobasokszama()));
+
+
+    }
+
 
     public void DiceRoll(ActionEvent actionEvent) throws IOException {
 
@@ -61,4 +83,5 @@ public class DiceController {
         eddigidobasok.setText("Eddigi dobások száma: "+String.valueOf(mentettDobás.getDobasokszama()));
 
     }
+
 }
